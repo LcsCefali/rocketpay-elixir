@@ -47,6 +47,7 @@ defmodule Rocketpay.MixProject do
       {:httpoison, "~> 1.8"},
       {:poison, "~> 3.1"},
       {:bcrypt_elixir, "~> 2.0"},
+      {:decimal, "~> 2.0"},
     ]
   end
 

@@ -13,7 +13,10 @@ defmodule RocketpayWeb.Router do
     post "/users", UsersController, :create
 
     post "/accounts/:id/deposit", AccountsController, :deposit
-    post "/accounts/:id/withdraw", UsersController, :withdraw
+    post "/accounts/:id/withdraw", AccountsController, :withdraw
+    post "/accounts/transaction", AccountsController, :transaction
+
+    get "/transaction", TransactionsController, :list_transactions
 
     # brincadeira minha
     get "/addressByZipcode/:zipcode", ZipcodeController, :index
